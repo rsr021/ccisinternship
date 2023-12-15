@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Use Google Fonts for the font-family */
+    
+}
+
+header {
+    background-color: #800000; /* Background color of the navigation bar */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 40px; /* Set the maximum height of the logo */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Text color for login and sign-up links */
+    margin-left: 20px; /* Spacing between links */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Your existing styles for the navigation bar */
+
+.homepage-container {
+    display: flex;
+    overflow: hidden; /* Hide content outside this container */
+    position: relative;
+    margin-top: 2px;
+}
+
+.diagonal-container {
+    width: 75%;
+    height: 100vh; /* Adjust the height as needed */
+    position: relative;
+}
+
+.diagonal-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width to create the diagonal separation */
+    height: 100%; /* Full height to cover the container */
+    background: linear-gradient(135deg, maroon 50%, white 50%); /* Diagonal gradient background */
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 70px;
+
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+}
+.right-content.icon{
+    display: block;
+    margin: 0 auto;
+}
+.right-content img {
+    display: block;
+    margin: 0 auto;
+}
+
+.right-content .right-button {
+     margin-right: 32px;
+   
+}
+.left-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+
+}
+
+.icon {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.white_icon{
+    max-width: 100px;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+
+p {
+    margin: 0;
+    font-size: 25px; /* Adjust text size */
+}
+
+.left-button {
+    background-color: white;
+    border: none; /* Button border */
+    color: black; /* Text color for buttons */
+    padding: 10px 20px; /* Adjust padding for button size */
+    border-radius: 25px; /* Border radius for oblong shape */
+    margin-top: 15px; /* Spacing between text and button */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.right-button {
+    background-color: #800000;
+    border: none;
+    color: #fff; /* Text color for buttons */
+    padding: 10px 20px; /* Adjust padding for button size */
+    border-radius: 25px; /* Border radius for oblong shape */
+    margin-top: 15px; /* Spacing between text and button */
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+.left-button:hover {
+    border-color:black;
+    color: white;
+    border: 3px;
+    background-color: transparent;
+    border-style: solid;
+    
+}
+.right-button:hover{
+    border-color:black;
+    color: maroon;
+    border: 3px;
+    background-color: transparent;
+    border-style: solid;
+}
+
+.photo-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; /* Center the content horizontally */
+    width: 100%; /* Make the container full-width */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.photo-container img {
+    max-width: 80%; /* Adjust the maximum width of the photo */
+    max-height: 80%; /* Adjust the maximum height of the photo */
+    display: block; /* Center the photo horizontally within the container */
+    margin: 0 auto;
+}

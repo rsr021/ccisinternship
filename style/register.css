@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Use Google Fonts for the font-family */
+}
+
+header {
+    background-color: #800000; /* Background color of the navigation bar */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 40px; /* Set the maximum height of the logo */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Text color for login and sign-up links */
+    margin-left: 20px; /* Spacing between links */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Your existing styles for the navigation bar */
+
+.homepage-container {
+    display: flex;
+    overflow: hidden; /* Hide content outside this container */
+    position: relative;
+    margin-top: 2px;
+}
+
+.diagonal-container {
+    width: 80%;
+    height: 100vh; /* Adjust the height as needed */
+    position: relative;
+}
+
+.diagonal-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width to create the diagonal separation */
+    height: 100%; /* Full height to cover the container */
+    background: linear-gradient(135deg, maroon 50%, white 50%); /* Diagonal gradient background */
+}

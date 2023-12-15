@@ -1,0 +1,26 @@
+		ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s, background-color 0.3s; /* Add transitions for color and background-color changes */
+            /* Add some padding to the links for better styling */
+        }
+
+        a:hover {
+            color: blue; /* Change link text color on hover */
+			text-decoration: none;
+        }
+
+        a.active {
+            color: blue; /* Change link text color when it's active */
+           /*background-color: rgba(255,255,255,0.5);*/ /* Change link background color when it's active */
+        }
